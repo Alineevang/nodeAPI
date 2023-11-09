@@ -10,10 +10,25 @@ app.use(express.json()); //faz o express entender json
 
 app.get('/', (req, res) => {
     // Rota inicial
-    res.status(200).json({ message: 'Hello World!' });
-    });
+    res.status(200).json({ message: 'Hello, GET!' });
+});
+
+app.post('/', (req, res) => {
+    // Rota inicial
+    res.status(200).json({ message: 'Hello, POST!' });
+});
+
+app.put('/', (req, res) => {
+    // Rota inicial
+    res.status(200).json({ message: 'Hello, PUT!' });
+});
+
+app.delete('/', (req, res) => {
+    // Rota inicial
+    res.status(200).json({ message: 'Hello, DELETE!' });
+});
 
 app.listen(port, () => {
     // Inicia o servidor
     console.log(`Server is running on port http://localhost:${port}`);
-    });
+});
