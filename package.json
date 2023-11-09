@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "aula API 09/11/2023",
   "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
